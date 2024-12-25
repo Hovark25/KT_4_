@@ -1,0 +1,100 @@
+/* Сброс стилей (по желанию) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* Задайте свой шрифт, например Roboto или Arial */
+    font-family: Arial, sans-serif;
+    color: #555;
+    background: #fff;
+  }
+  
+  /* Контейнер для ограничения ширины */
+  .container {
+    width: 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* ===================== ШАПКА ===================== */
+  .site-header {
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #aaa; /* Сероватый, как на макете */
+  }
+  
+  .hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* ===================== ГЛАВНЫЙ БЛОК (Hero) ===================== */
+  .hero {
+    /* Основной голубовато-зелёный фон */
+    background-color: #78A8B8; 
+    position: relative; /* чтобы можно было абсолютно позиционировать shapes */
+    padding: 50px 0;
+    min-height: 100vh; /* чтобы было побольше места */
+    color: #fff; /* текст на голубом фоне по умолчанию белый */
+  } 
+  
+  /* Обёртка карточек (над фоном) */
+  .cards-wrapper {
+    position: relative;
+    z-index: 2; /* чтобы карточки были выше shapes */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Каждая карточка */
+  .info-card {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 200px; /* ограничим ширину карточки */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Заголовок с номером */
+  .card-number {
+    font-size: 2rem;
+    color: #78A8B8; /* тот же голубоватый, что и фон, но можно чуть темнее */
+    margin-bottom: 10px;
+  }
+  
+  /* Текст внутри карточки */
+  .info-card p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+  
+  /* ===================== ПОДВАЛ ===================== */
+  .site-footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px 0;
+  }
+  
+  .footer-inner p {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
